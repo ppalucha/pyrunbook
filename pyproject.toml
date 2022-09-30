@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyrunbook"
+description = "Create run-books as a Python code"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Systems Administration",
+]
+keywords = [
+    "automation",
+    "runbook",
+]
+version = "0.0.1"
+dependencies = [
+    "termcolor",
+    "jsonpickle",
+]
