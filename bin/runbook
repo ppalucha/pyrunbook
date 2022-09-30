@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+
+from pyrunbook.runbook import RunBook
+from pyrunbook.runner import Runner
+from pyrunbook.step import Step
+
+if __name__ == "__main__":
+    runbook = RunBook([
+        Step("Step 1", description="This step has quite a long description. The point is to make it longer than 70 lines, so we can test how it behaves. But it is just to put something, especially a very long link such as https://www.google.com/search?q=nord+stream+2+technical+gas&oq=nordstream+gaz+techni&aqs=chrome.1.69i57j0i22i30l3j0i390l4.7449j0j4&sourceid=chrome&ie=UTF-8 and some shoreter (but need to move) one such as https://google.com/ole"),
+        Step("Step 2"),
+        Step("Step 3"),
+        Step("Step 3"),
+        Step("Step 3"),
+        Step("Step 3"),Step("Step 3"),Step("Step 3"),Step("Step 3"),Step("Step 3"),Step("Step 3"),Step("Step 3"),Step("Step 3"),
+    ],
+        description="This is a quite long and completely meaningless description of the runbook. The point is to make it longer than 70 lines, so we cen test how it behaves.")
+    runner = Runner(runbook)
+    runner.run()

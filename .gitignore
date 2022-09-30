@@ -1,0 +1,11 @@
+# InteliJ
+*.iml
+.idea
+
+
+# Python
+*.pyc
+venv
+
+# Runbook state files
+runbook-state.json
